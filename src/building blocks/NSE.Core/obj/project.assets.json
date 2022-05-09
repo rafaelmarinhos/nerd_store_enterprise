@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rafael\\.nuget\\packages\\": {}
+    "C:\\Users\\Player HDN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
+      "projectUniqueName": "C:\\src\\github\\nerd_store_enterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
       "projectName": "NSE.Core",
-      "projectPath": "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
-      "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.Core\\obj\\",
+      "projectPath": "C:\\src\\github\\nerd_store_enterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
+      "packagesPath": "C:\\Users\\Player HDN\\.nuget\\packages\\",
+      "outputPath": "C:\\src\\github\\nerd_store_enterprise\\src\\building blocks\\NSE.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Player HDN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

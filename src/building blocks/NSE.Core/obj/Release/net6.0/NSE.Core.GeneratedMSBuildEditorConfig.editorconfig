@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NSE.Core
-build_property.ProjectDir = C:\src\github\estudos\nerd_store_enterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\
+build_property.ProjectDir = C:\src\github\nerd_store_enterprise\src\building blocks\NSE.Core\

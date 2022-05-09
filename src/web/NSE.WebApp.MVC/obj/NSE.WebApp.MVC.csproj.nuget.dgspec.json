@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj": {}
+    "C:\\src\\github\\nerd_store_enterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj": {}
   },
   "projects": {
-    "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj": {
+    "C:\\src\\github\\nerd_store_enterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
+        "projectUniqueName": "C:\\src\\github\\nerd_store_enterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
         "projectName": "NSE.WebApp.MVC",
-        "projectPath": "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
-        "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\obj\\",
+        "projectPath": "C:\\src\\github\\nerd_store_enterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
+        "packagesPath": "C:\\Users\\Player HDN\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\github\\nerd_store_enterprise\\src\\web\\NSE.WebApp.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Player HDN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

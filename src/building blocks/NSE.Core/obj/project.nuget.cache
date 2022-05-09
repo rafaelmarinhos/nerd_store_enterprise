@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2iDkwttqH+XQ85+oiK5nlJLRGz7zeabm8fgp5+KzQwwuHAXtJH1itERocNcntO7NtpUDzLBm4ZMUP6o2Em9jSw==",
+  "dgSpecHash": "HA663aV59N4LpS2aiLoN5TyGxIpubtKTnLdG+S3X9tN8JOMhwVCwiaD2XaKgpHprjLUIcEvkx7DCeglawHoBsw==",
   "success": true,
-  "projectFilePath": "C:\\src\\github\\estudos\\nerd_store_enterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
+  "projectFilePath": "C:\\src\\github\\nerd_store_enterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
