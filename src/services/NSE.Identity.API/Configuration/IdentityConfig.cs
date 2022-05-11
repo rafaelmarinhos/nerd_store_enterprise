@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using NSE.Identidade.API.Data;
-using NSE.Identity.API.Extensions;
-using System.Text;
+using NSE.WebAPI.Core.Identity;
 
 namespace NSE.Identity.API.Configuration
 {
@@ -16,45 +13,14 @@ namespace NSE.Identity.API.Configuration
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
-            // Configure JWT
             services.AddDefaultIdentity<IdentityUser>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            var appSettingsSection = configuration.GetSection("AppSettings");
-            services.Configure<AppSettings>(appSettingsSection);
-
-            var appSettings = appSettingsSection.Get<AppSettings>();
-            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
-
-            services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(bearerOptions =>
-            {
-                bearerOptions.RequireHttpsMetadata = true;
-                bearerOptions.SaveToken = true;
-                bearerOptions.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidAudience = appSettings.Audience,
-                    ValidIssuer = appSettings.Issuer
-                };
-            });
+            services.AddJwtConfiguration(configuration);
 
             return services;
-        }
-
-        public static IApplicationBuilder UseIdentityConfiguration(this IApplicationBuilder app)
-        {
-            app.UseAuthentication();
-            app.UseAuthorization();
-            return app;
         }
     }
 }

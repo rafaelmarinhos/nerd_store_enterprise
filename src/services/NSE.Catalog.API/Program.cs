@@ -1,17 +1,25 @@
+using NSE.Catalog.API.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+#region Configure Services
 
-builder.Services.AddControllers();
+builder.Services.AddApiConfiguration(builder.Configuration);
+
+builder.Services.AddSwaggerConfiguration();
+
+builder.Services.RegisterServices();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+#endregion
 
-app.UseHttpsRedirection();
+#region Configure Pipeline
 
-app.UseAuthorization();
+app.UseApiConfiguration(app.Environment);
 
-app.MapControllers();
+app.UseSwaggerConfiguration();
 
 app.Run();
+
+#endregion
