@@ -9,7 +9,7 @@ namespace NSE.Catalog.API.Configuration
         public static void RegisterServices(this IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<CatalogContext>();            
+            services.AddScoped<CatalogContext>();
         }
     }
 }

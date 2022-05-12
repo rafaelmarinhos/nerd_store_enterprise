@@ -1,6 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
 
-namespace NSE.Catalog.API.Configuration
+namespace NSE.Customers.API.Configuration
 {
     public static class SwaggerConfig
     {
@@ -10,7 +10,7 @@ namespace NSE.Catalog.API.Configuration
             {
                 x.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "NerdStore Enterprise Catalog API"
+                    Title = "NerdStore Enterprise Customer API"
                 });
 
                 x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
