@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NSE.Catalog.API.Models;
+using NSE.Core.Data;
 
 namespace NSE.Catalog.API.Data.Repositories
 {
     public class ProductRepository : IProductRepository
     {
+        public IUnitOfWork UnitOfWork => _context;
         private readonly CatalogContext _context;
 
         public ProductRepository(CatalogContext context)

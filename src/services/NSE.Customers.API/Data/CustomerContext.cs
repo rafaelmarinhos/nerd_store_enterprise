@@ -11,13 +11,13 @@ namespace NSE.Customers.API.Data
         public DbSet<Address> Addresses { get; set; }
 
         public CustomerContext(DbContextOptions<CustomerContext> options) : base(options)
-        {            
+        {
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
             ChangeTracker.AutoDetectChangesEnabled = false;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {   
+        {
             foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(
                 e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
                 property.SetColumnType("varchar(100)");
@@ -28,9 +28,9 @@ namespace NSE.Customers.API.Data
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CustomerContext).Assembly);
         }
 
-        public Task<bool> CommitAsync()
+        public async Task<bool> CommitAsync()
         {
-            throw new NotImplementedException();
+            return await base.SaveChangesAsync() > 0;
         }
     }
 }

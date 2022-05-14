@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using NSE.Customers.API.Data;
 using NSE.WebAPI.Core.Identity;
 
@@ -24,6 +25,8 @@ namespace NSE.Customers.API.Configuration
             });
 
             services.AddJwtConfiguration(configuration);
+
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         public static void UseApiConfiguration(this WebApplication app, IWebHostEnvironment env)

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Q2GRLij7URBoSDoHzL6bOKh3DspVehSWpeif7pZMU7yqhkZm5yznUoGr86ieNqpci92540l6CP5oYjlfIFhAxw==",
+  "dgSpecHash": "7JMD2EV/NkfEiaf+sg6n6XsM2joeHjgIcP4Nb6vmLMcy3XA31OPddITfLb//1lODz3fWxVX7Bq4p3uEcKOWFrw==",
   "success": true,
   "projectFilePath": "C:\\src\\github\\nerd_store_enterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Player HDN\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
+    "C:\\Users\\Player HDN\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Player HDN\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

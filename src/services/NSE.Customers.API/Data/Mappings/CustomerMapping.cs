@@ -25,11 +25,11 @@ namespace NSE.Customers.API.Data.Mappings
                     .HasColumnName("Email")
                     .HasColumnType($"varchar({Email.MaxLength})");
             });
-            
+
             builder.HasOne(c => c.Address)
                 .WithOne(c => c.Customer);
 
-            builder.ToTable("Customer");
+            builder.ToTable("Customers");
         }
     }
 }
